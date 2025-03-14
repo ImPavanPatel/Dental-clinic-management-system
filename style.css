@@ -118,7 +118,7 @@ section{
 .home{
   min-height: 100vh;
   padding-top: 12rem;
-  background: url(image/home-bg.jpg) no-repeat;
+  background: url(image/home_background.jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -156,8 +156,13 @@ section{
 
 .home .row .content h3{
   font-size: 6.5rem;
-  color: var(--main-color);
+  /* color: var(--main-color); */
   text-transform: uppercase;
+}
+
+.home .row .content p{
+  font-size: 2.5rem;
+  /* color: var(--main-color); */
 }
 
 .home .image-slider{

@@ -1,339 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahirodent</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coffee Shop Website</title>
+    <!-- Favicon setup -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="image/favicon_io/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="image/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="image/favicon_io/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="image/favicon_io/site.webmanifest" />
+    <link rel="shortcut icon" href="image/favicon_io/favicon.ico" />
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7.0.0/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7.0.0/swiper-bundle.min.css"
+    />
 
-  <!-- font awesome cdn link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
-  <!-- custom css file link -->
-  <link rel="stylesheet" href="style.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
+  <body>
+    <!-- header section starts -->
 
-<body>
+    <header class="header">
+      <div id="menu-btn" class="fas fa-bars"></div>
 
-  <!-- header section starts -->
+      <a href="#home" class="logo">
+        <img src="image/logo.png" width="100px" alt="logo" />
+      </a>
 
-  <header class="header">
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about us</a>
+        <a href="#menu">our services</a>
+        <a href="#review">review</a>
+        <a href="#book">book</a>
+      </nav>
 
-    <div id="menu-btn" class="fas fa-bars"></div>
+      <a href="booking.html" class="btn">book an appointment</a>
+    </header>
 
-    <a href="#home" class="logo"> coffee <i class="fas fa-mug-hot"></i> </a>
+    <!-- header section ends -->
 
-    <nav class="navbar">
-      <a href="#home">home</a>
-      <a href="#about">about</a>
-      <a href="#menu">menu</a>
-      <a href="#review">review</a>
-      <a href="#book">book</a>
-    </nav>
+    <!-- home section starts -->
 
-    <a href="booking.html" class="btn">book a table</a>
+    <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <h3>Your best life begins with a smile</h3>
+          <p>Get the best treatment for your teeth</p>
+          <!-- <a href="#" class="btn">buy one now</a> -->
+        </div>
 
-  </header>
-
-  <!-- header section ends -->
-
-  <!-- home section starts -->
-
-  <section class="home" id="home">
-
-    <div class="row">
-
-      <div class="content">
-        <h3>fresh coffee in the morning</h3>
-        <a href="#" class="btn">buy one now</a>
+        <div class="image">
+          <img
+            draggable="false"
+            src="image/teeth.png"
+            class="main-home-image"
+            alt="home-img-1"
+          />
+        </div>
       </div>
 
-      <div class="image">
-        <img src="image/home-img-1.png" class="main-home-image" alt="home-img-1">
-      </div>
-
-    </div>
-
-    <div class="image-slider">
+      <!-- <div class="image-slider">
       <img src="image/home-img-1.png" alt="home-img-1">
       <img src="image/home-img-2.png" alt="home-img-2">
       <img src="image/home-img-3.png" alt="home-img-3">
-    </div>
+    </div> -->
+    </section>
 
-  </section>
+    <!-- home section ends -->
 
-  <!-- home section ends -->
+    <!-- about section starts -->
 
-  <!-- about section starts -->
-  
-  <section class="about" id="about">
+    <section class="about" id="about">
+      <h1 class="heading">about us <span>why choose us</span></h1>
 
-    <h1 class="heading">about us <span>why choose us</span></h1>
-
-    <div class="row">
-
-      <div class="image">
-        <img src="image/about-img.png" alt="about-img">
-      </div>
-
-      <div class="content">
-        <h3 class="title">what makes our coffee special!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit non delectus ipsum excepturi ratione, ut
-          harum odit eius recusandae. Ducimus delectus officia, molestias voluptate fugit doloribus cum ab dolorem non.
-        </p>
-        <a href="#" class="btn">read more</a>
-
-        <div class="icons-container">
-          <div class="icons">
-            <img src="image/about-icon-1.png" alt="about-icon-1">
-            <h3>quality coffee</h3>
-          </div>
-          <div class="icons">
-            <img src="image/about-icon-2.png" alt="about-icon-2">
-            <h3>our branches</h3>
-          </div>
-          <div class="icons">
-            <img src="image/about-icon-3.png" alt="about-icon-3">
-            <h3>free delivery</h3>
-          </div>
+      <div class="row">
+        <div class="image">
+          <img src="image/dentist.jpg" alt="about-img" />
         </div>
 
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- about section ends -->
-
-  <!-- menu section starts -->
-
-  <section class="menu" id="menu">
-
-    <h1 class="heading">our menu <span>popular menu</span></h1>
-    
-    <div class="box-container">
-
-      <a href="#" class="box">
-        <img src="image/menu-1.png" alt="menu-1">
         <div class="content">
-          <h3>our special coffee</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, dolores.</p>
-          <span>₹99.99</span>
-        </div>
-      </a>
+          <h3 class="title">what makes our clinic special!</h3>
+          <p>
+            At our clinic, your smile is our priority! We offer expert care with
+            advanced techniques and technology, ensuring top-quality treatment.
+            Every patient receives a personalized approach with customized plans
+            tailored to their needs. We prioritize your comfort, making every
+            visit stress-free and welcoming. With timely appointments and
+            flexible scheduling, we value your time. Plus, we provide
+            affordable, high-quality care with transparent pricing and payment
+            options. Trust us to bring out the best in your smile.
+          </p>
+          <a href="#" class="btn">book your appointment today</a>
 
-      <a href="#" class="box">
-        <img src="image/menu-2.png" alt="menu-2">
-        <div class="content">
-          <h3>our special coffee</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, dolores.</p>
-          <span>₹99.99</span>
-        </div>
-      </a>
-      
-      <a href="#" class="box">
-        <img src="image/menu-3.png" alt="menu-3">
-        <div class="content">
-          <h3>our special coffee</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, dolores.</p>
-          <span>₹99.99</span>
-        </div>
-      </a>
-      
-      <a href="#" class="box">
-        <img src="image/menu-4.png" alt="menu-4">
-        <div class="content">
-          <h3>our special coffee</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, dolores.</p>
-          <span>₹99.99</span>
-        </div>
-      </a>
-      
-      <a href="#" class="box">
-        <img src="image/menu-5.png" alt="menu-5">
-        <div class="content">
-          <h3>our special coffee</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, dolores.</p>
-          <span>₹99.99</span>
-        </div>
-      </a>
-      
-      <a href="#" class="box">
-        <img src="image/menu-6.png" alt="menu-6">
-        <div class="content">
-          <h3>our special coffee</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, dolores.</p>
-          <span>₹99.99</span>
-        </div>
-      </a>
-
-    </div>
-
-  </section>
-
-  <!-- menu section ends -->
-
-  <!-- review section starts -->
-
-  <section class="review" id="review">
-
-    <h1 class="heading">reviews <span>what people says</span></h1>
-
-    <div class="swiper review-slider">
-
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide box">
-          <i class="fas fa-quote-left"></i>
-          <i class="fas fa-quote-right"></i>
-          <img src="image/pic-1.png" alt="pic-1">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+          <div class="icons-container">
+            <div class="icons">
+              <img src="image/stethoscope-solid.svg" alt="about-icon-1" />
+              <h3>advanced treatments</h3>
+            </div>
+            <div class="icons">
+              <img src="image/wallet-solid.svg" alt="about-icon-2" />
+              <h3>affordable care</h3>
+            </div>
+            <div class="icons">
+              <img src="image/calendar-check-regular.svg" alt="about-icon-3" />
+              <h3>easy appointment</h3>
+            </div>
+            <div class="icons">
+              <img src="image/chair-solid.svg" alt="about-icon-1" />
+              <h3>Patitent Comfort</h3>
+            </div>
+            <div class="icons">
+              <img src="image/face-smile-regular.svg" alt="about-icon-2" />
+              <h3>Painless Dentistry</h3>
+            </div>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti repellat, excepturi architecto illo autem.</p>
-          <h3>john deo</h3>
-          <span>satisfied client</span>
         </div>
-        
-        <div class="swiper-slide box">
-          <i class="fas fa-quote-left"></i>
-          <i class="fas fa-quote-right"></i>
-          <img src="image/pic-2.png" alt="pic-2">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- menu section starts -->
+
+    <section class="menu" id="menu">
+      <h1 class="heading">our services <span>treatment options</span></h1>
+
+      <div class="box-container">
+        <a href="#" class="box">
+          <img src="image/menu-1.png" alt="menu-1" />
+          <div class="content">
+            <h3>our special coffee</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis, dolores.
+            </p>
+            <span>₹99.99</span>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti repellat, excepturi architecto illo autem.</p>
-          <h3>john deo</h3>
-          <span>satisfied client</span>
-        </div>
-        
-        <div class="swiper-slide box">
-          <i class="fas fa-quote-left"></i>
-          <i class="fas fa-quote-right"></i>
-          <img src="image/pic-3.png" alt="pic-3">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+        </a>
+
+        <a href="#" class="box">
+          <img src="image/menu-2.png" alt="menu-2" />
+          <div class="content">
+            <h3>our special coffee</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis, dolores.
+            </p>
+            <span>₹99.99</span>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti repellat, excepturi architecto illo autem.</p>
-          <h3>john deo</h3>
-          <span>satisfied client</span>
-        </div>
-        
-        <div class="swiper-slide box">
-          <i class="fas fa-quote-left"></i>
-          <i class="fas fa-quote-right"></i>
-          <img src="image/pic-4.png" alt="pic-4">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+        </a>
+
+        <a href="#" class="box">
+          <img src="image/menu-3.png" alt="menu-3" />
+          <div class="content">
+            <h3>our special coffee</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis, dolores.
+            </p>
+            <span>₹99.99</span>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti repellat, excepturi architecto illo autem.</p>
-          <h3>john deo</h3>
-          <span>satisfied client</span>
+        </a>
+
+        <a href="#" class="box">
+          <img src="image/menu-4.png" alt="menu-4" />
+          <div class="content">
+            <h3>our special coffee</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis, dolores.
+            </p>
+            <span>₹99.99</span>
+          </div>
+        </a>
+
+        <a href="#" class="box">
+          <img src="image/menu-5.png" alt="menu-5" />
+          <div class="content">
+            <h3>our special coffee</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis, dolores.
+            </p>
+            <span>₹99.99</span>
+          </div>
+        </a>
+
+        <a href="#" class="box">
+          <img src="image/menu-6.png" alt="menu-6" />
+          <div class="content">
+            <h3>our special coffee</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis, dolores.
+            </p>
+            <span>₹99.99</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- menu section ends -->
+
+    <!-- review section starts -->
+
+    <section class="review" id="review">
+      <h1 class="heading">reviews <span>what people says</span></h1>
+
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <i class="fas fa-quote-left"></i>
+            <i class="fas fa-quote-right"></i>
+            <img src="image/pic-1.png" alt="pic-1" />
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+              deleniti repellat, excepturi architecto illo autem.
+            </p>
+            <h3>john deo</h3>
+            <span>satisfied client</span>
+          </div>
+
+          <div class="swiper-slide box">
+            <i class="fas fa-quote-left"></i>
+            <i class="fas fa-quote-right"></i>
+            <img src="image/pic-2.png" alt="pic-2" />
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+              deleniti repellat, excepturi architecto illo autem.
+            </p>
+            <h3>john deo</h3>
+            <span>satisfied client</span>
+          </div>
+
+          <div class="swiper-slide box">
+            <i class="fas fa-quote-left"></i>
+            <i class="fas fa-quote-right"></i>
+            <img src="image/pic-3.png" alt="pic-3" />
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+              deleniti repellat, excepturi architecto illo autem.
+            </p>
+            <h3>john deo</h3>
+            <span>satisfied client</span>
+          </div>
+
+          <div class="swiper-slide box">
+            <i class="fas fa-quote-left"></i>
+            <i class="fas fa-quote-right"></i>
+            <img src="image/pic-4.png" alt="pic-4" />
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+              deleniti repellat, excepturi architecto illo autem.
+            </p>
+            <h3>john deo</h3>
+            <span>satisfied client</span>
+          </div>
         </div>
 
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- book section starts -->
+
+    <section class="book" id="book">
+      <h1 class="heading">booking <span>reserve an appointment</span></h1>
+
+      <form action="">
+        <input type="text" placeholder="your name" required class="box" />
+        <input type="email" placeholder="your email" required class="box" />
+        <input
+          type="tel"
+          placeholder="9876543210"
+          pattern="[0-9]{10}"
+          required
+          class="box"
+        />
+
+        <textarea
+          name=""
+          placeholder="your message"
+          class="box"
+          cols="30"
+          rows="10"
+          required
+        ></textarea>
+
+        <input type="submit" value="book appointment" class="btn" />
+      </form>
+    </section>
+
+    <!-- book section ends -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>our branches</h3>
+          <a href="#"><i class="fas fa-arrow-right"></i>bandra</a>
+          <a href="#"><i class="fas fa-arrow-right"></i>kurla</a>
+          <a href="#"><i class="fas fa-arrow-right"></i>andheri</a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-arrow-right"></i>home</a>
+          <a href="#about"><i class="fas fa-arrow-right"></i>about us</a>
+          <a href="#menu"><i class="fas fa-arrow-right"></i>our services</a>
+          <a href="#review"><i class="fas fa-arrow-right"></i>review</a>
+          <a href="#book"><i class="fas fa-arrow-right"></i>book</a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +91 1234567890 </a>
+          <a href="#"> <i class="fas fa-phone"></i> +91 9876543210 </a>
+          <a href="#" style="text-transform: none">
+            <i class="fas fa-envelope"></i> hotcoffee@gmail.com
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-location-dot"></i> bandra, mumbai, 400050
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>social media</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+          <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+        </div>
       </div>
 
-      <div class="swiper-pagination"></div>
-
-    </div>
-
-  </section>
-
-  <!-- review section ends -->
-
-  <!-- book section starts -->
-
-  <section class="book" id="book">
-
-    <h1 class="heading">booking <span>reserve a table</span></h1>
-
-    <form action="">
-
-      <input type="text" placeholder="your name" required class="box">
-      <input type="email" placeholder="your email" required class="box">
-      <input type="tel" placeholder="9876543210" pattern="[0-9]{10}" required class="box">
-
-      <textarea name="" placeholder="your message" class="box" cols="30" rows="10" required></textarea>
-
-      <input type="submit" value="send message" class="btn">
-
-    </form>
-
-  </section>
-
-  <!-- book section ends -->
-
-  <!-- footer section starts -->
-
-  <section class="footer">
-
-    <div class="box-container">
-
-      <div class="box">
-        <h3>our branches</h3>
-        <a href="#"><i class="fas fa-arrow-right"></i>bandra</a>
-        <a href="#"><i class="fas fa-arrow-right"></i>kurla</a>
-        <a href="#"><i class="fas fa-arrow-right"></i>andheri</a>
+      <div class="credit">
+        created by <span>ImPavanPatel</span> | all rights reserved
       </div>
-      
-      <div class="box">
-        <h3>quick links</h3>
-        <a href="#home"><i class="fas fa-arrow-right"></i>home</a>
-        <a href="#about"><i class="fas fa-arrow-right"></i>about</a>
-        <a href="#menu"><i class="fas fa-arrow-right"></i>menu</a>
-        <a href="#review"><i class="fas fa-arrow-right"></i>review</a>
-        <a href="#book"><i class="fas fa-arrow-right"></i>book</a>
-      </div>
+    </section>
 
-      <div class="box">
-        <h3>contact info</h3>
-        <a href="#"> <i class="fas fa-phone"></i> +91 1234567890 </a>
-        <a href="#"> <i class="fas fa-phone"></i> +91 9876543210 </a>
-        <a href="#" style="text-transform: none"> <i class="fas fa-envelope"></i> hotcoffee@gmail.com </a>
-        <a href="#"> <i class="fa-solid fa-location-dot"></i> bandra, mumbai, 400050 </a>
-      </div>
-      
-      <div class="box">
-        <h3>social media</h3>
-        <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
-        <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-        <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-        <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
-      </div>
+    <!-- footer section ends -->
 
-    </div>
+    <script src="https://unpkg.com/swiper@7.0.0/swiper-bundle.min.js"></script>
 
-    <div class="credit">created by <span>ImPavanPatel</span> | all rights reserved</div>
-    
-  </section>
-
-  <!-- footer section ends -->
-
-  <script src="https://unpkg.com/swiper@7.0.0/swiper-bundle.min.js"></script>
-
-  <!-- custom js file link -->
-  <script src="script.js"></script>
-</body>
-
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+  </body>
 </html>

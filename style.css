@@ -574,3 +574,92 @@ section{
   }
 
 }
+
+/* FAQ Section */
+.faq-section {
+  padding: 5rem 9%;
+  text-align: center;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.faq-item {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.faq-question {
+  background: #f0f0f0;
+  color: var(--main-color);
+  padding: 1.5rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question::after {
+  content: '+';
+  font-size: 2.5rem;
+}
+
+.faq-question.active::after {
+  content: '-';
+}
+
+.faq-answer {
+  padding: 0 1.5rem;
+  background: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-answer p {
+  font-size: 1.6rem;
+  color: var(--main-color);
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .faq-section {
+      padding: 3rem;
+  }
+
+  .faq-question {
+      font-size: 1.6rem;
+  }
+}
+
+/* FAQ Page */
+.faq-section {
+  padding: 5rem 9%;
+  text-align: center;
+  background-image: url('image/faqimg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Optional: Add a background overlay for better readability */
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* background-blend-mode: overlay; */
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  /* Optional: Add a background to the container itself if needed */
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  /* padding: 20px; */
+  /* border-radius: 10px; */
+}

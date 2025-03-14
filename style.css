@@ -251,7 +251,8 @@ section{
 }
 
 .menu{
-  background: url(image/menu-bg.jpg) no-repeat;
+  /* background: url(image/menu-bg.jpg) no-repeat; */
+  background-color: #8fd4cf;
   background-position: center;
   background-size: center;
 }

@@ -39,3 +39,24 @@ var swiper = new Swiper(".review-slider", {
   loop: true,
   grabCursor: true,
 });
+
+// Get today's date in YYYY-MM-DD format
+const today = new Date();
+const yyyy = today.getFullYear();
+const mm = String(today.getMonth() + 1).padStart(2, '0'); // Month starts from 0
+const dd = String(today.getDate()).padStart(2, '0');
+const formattedDate = `${yyyy}-${mm}-${dd}`;
+
+// Select the date input field
+const dateInput = document.getElementById('appointment-date');
+
+// Set today's date as the default value
+dateInput.value = formattedDate;
+
+// Set today's date as the minimum value
+dateInput.setAttribute('min', formattedDate);
+
+// Open the date picker on click
+dateInput.addEventListener('click', () => {
+  dateInput.showPicker(); // Forcefully opens the date picker
+});

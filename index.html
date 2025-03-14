@@ -324,26 +324,68 @@
       <h1 class="heading">booking <span>reserve an appointment</span></h1>
 
       <form action="">
-        <input type="text" placeholder="your name" required class="box" />
-        <input type="email" placeholder="your email" required class="box" />
+        <label class="label required" for="name">Name</label>
+        <input type="text" id="name" placeholder="Name" required class="box" />
+        <label class="label required" for="email">Email</label>
         <input
+          type="email"
+          id="email"
+          placeholder="Email"
+          required
+          class="box"
+        />
+        <label class="label required" for="phone">Phone number</label>
+        <input
+          id="phone"
           type="tel"
-          placeholder="9876543210"
+          placeholder="Mobile"
           pattern="[0-9]{10}"
           required
           class="box"
         />
 
+        <!-- Date Field -->
+        <label class="label required" for="appointment-date"
+          >Select Appointment Date:</label
+        >
+        <input
+          type="date"
+          id="appointment-date"
+          name="appointment_date"
+          class="box"
+          required
+        />
+
+        <!-- Dropdown Field -->
+        <label class="label required" for="referral-source"
+          >How did you hear about us?</label
+        >
+        <select
+          class="box"
+          id="referral-source"
+          name="referral_source"
+          required
+        >
+          <option value="google">Google</option>
+          <option value="social_media">
+            Social Media (Facebook, Instagram, etc.)
+          </option>
+          <option value="word_of_mouth">Word of Mouth</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label class="label required" for="message">Message</label>
         <textarea
           name=""
-          placeholder="your message"
+          id="message"
+          placeholder="Message"
           class="box"
           cols="30"
           rows="10"
           required
         ></textarea>
 
-        <input type="submit" value="book appointment" class="btn" />
+        <input type="submit" value="book my appointment now" class="btn" />
       </form>
     </section>
 
@@ -354,10 +396,14 @@
     <section class="footer">
       <div class="box-container">
         <div class="box">
-          <h3>our branches</h3>
-          <a href="#"><i class="fas fa-arrow-right"></i>bandra</a>
-          <a href="#"><i class="fas fa-arrow-right"></i>kurla</a>
-          <a href="#"><i class="fas fa-arrow-right"></i>andheri</a>
+          <a href="index.html">
+            <img src="image/logo.png" alt="logo" width="200px" />
+          </a>
+          <p>
+            Ahirodent Dental Clinic in Vasai has 24 years of experience
+            in smile makeovers & advanced dental care for a healthy, confident
+            smile. Visit today!
+          </p>
         </div>
 
         <div class="box">

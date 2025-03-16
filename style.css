@@ -684,3 +684,119 @@ section{
   /* padding: 20px; */
   /* border-radius: 10px; */
 }
+
+/* Achievements Section */
+.achievements {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.counter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 5rem;
+}
+
+.counter-item {
+  text-align: center;
+  color: #232323;
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  flex: 0 0 23%; /* Default for large screens */
+}
+
+/* Counter Wrapper */
+.counter-wrapper {
+  display: flex;
+  align-items: center; /* Align number and + properly */
+  justify-content: center;
+  gap: 0.2rem;
+  font-weight: bold;
+  color: #232323;
+}
+
+.counter, .plus {
+  font-size: 6.5rem; /* Unified font size */
+}
+
+.counter-container p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Responsive Layout */
+
+/* Mobile - Max 450px */
+@media (max-width: 450px) {
+  .counter-container {
+    /* flex: 0 0 100%; Full width for one counter per row */
+    text-align: center;
+    display: grid;
+  }
+}
+
+/* Tablet - Max 1024px */
+@media (max-width: 1024px) {
+  .counter-item {
+    flex: 0 0 48%; /* Two counters per row */
+    padding-top: 3rem;
+  }
+
+  .counter-container {
+    padding-top: 2rem;
+  }
+}
+
+/* Large Screens - Min 1440px */
+@media (min-width: 1440px) {
+  .counter-item {
+    flex: 0 0 23%; /* Four counters in a row */
+  }
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25d366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-btn img {
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Adjustments */
+
+/* On Small Screens */
+@media (max-width: 450px) {
+  .whatsapp-btn {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .whatsapp-btn img {
+    width: 60%;
+  }
+}

@@ -31,3 +31,37 @@ $(document).ready(function() {
   $('button.slick-prev').not('.slick-slider button.slick-prev').remove();
   $('button.slick-next').not('.slick-slider button.slick-next').remove();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
+
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const counterPosition = counter.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.3;
+
+      if (counterPosition < screenPosition && !counter.classList.contains("animated")) {
+        counter.classList.add("animated");
+
+        const target = +counter.getAttribute("data-target");
+        const increment = target / 200;
+
+        const updateCount = () => {
+          const count = +counter.innerText;
+
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 10);
+          } else {
+            counter.innerText = target; // Final number
+          }
+        };
+
+        updateCount();
+      }
+    });
+  };
+
+  // Trigger the animation on scroll
+  window.addEventListener("scroll", animateCounters);
+});

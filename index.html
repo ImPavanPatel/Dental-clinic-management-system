@@ -29,7 +29,13 @@
 
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper@7.0.0/swiper-bundle.min.css"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
     />
 
     <!-- font awesome cdn link -->
@@ -57,7 +63,7 @@
         <a href="#about">about us</a>
         <a href="#menu">our treatments</a>
         <a href="#review">review</a>
-        <a href="#book">book</a>
+        <a href="booking.html">book</a>
       </nav>
 
       <a href="booking.html" class="btn">book an appointment</a>
@@ -72,7 +78,6 @@
         <div class="content">
           <h3>Your best life begins with a smile</h3>
           <p>Get the best treatment for your teeth</p>
-          <!-- <a href="#" class="btn">buy one now</a> -->
         </div>
 
         <div class="image">
@@ -84,12 +89,6 @@
           />
         </div>
       </div>
-
-      <!-- <div class="image-slider">
-      <img src="image/home-img-1.png" alt="home-img-1">
-      <img src="image/home-img-2.png" alt="home-img-2">
-      <img src="image/home-img-3.png" alt="home-img-3">
-    </div> -->
     </section>
 
     <!-- home section ends -->
@@ -146,250 +145,93 @@
 
     <!-- about section ends -->
 
-    <!-- menu section starts -->
+    <!-- treatment section starts -->
 
-    <section class="menu" id="menu">
-      <h1 class="heading">treatments<span>procedures</span></h1>
-
+    <section class="treatments" id="treatments">
+      <h1 class="heading">treatments <span>procedures</span></h1>
+    
       <div class="box-container">
-        <a href="#" class="box">
-          <img src="image/menu-1.png" alt="menu-1" />
-          <div class="content">
-            <h3>our special coffee</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis, dolores.
-            </p>
-            <span>₹99.99</span>
-          </div>
-        </a>
-
-        <a href="#" class="box">
-          <img src="image/menu-2.png" alt="menu-2" />
-          <div class="content">
-            <h3>our special coffee</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis, dolores.
-            </p>
-            <span>₹99.99</span>
-          </div>
-        </a>
-
-        <a href="#" class="box">
-          <img src="image/menu-3.png" alt="menu-3" />
-          <div class="content">
-            <h3>our special coffee</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis, dolores.
-            </p>
-            <span>₹99.99</span>
-          </div>
-        </a>
-
-        <a href="#" class="box">
-          <img src="image/menu-4.png" alt="menu-4" />
-          <div class="content">
-            <h3>our special coffee</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis, dolores.
-            </p>
-            <span>₹99.99</span>
-          </div>
-        </a>
-
-        <a href="#" class="box">
-          <img src="image/menu-5.png" alt="menu-5" />
-          <div class="content">
-            <h3>our special coffee</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis, dolores.
-            </p>
-            <span>₹99.99</span>
-          </div>
-        </a>
-
-        <a href="#" class="box">
-          <img src="image/menu-6.png" alt="menu-6" />
-          <div class="content">
-            <h3>our special coffee</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis, dolores.
-            </p>
-            <span>₹99.99</span>
-          </div>
-        </a>
+        <div class="card">
+          <h2>Teeth Cleaning</h2>
+          <button class="btn">KNOW MORE</button>
+        </div>
+        <div class="card">
+          <h2>Dental Fillings</h2>
+          <button class="btn">KNOW MORE</button>
+        </div>
+        <div class="card">
+          <h2>Tooth Extraction</h2>
+          <button class="btn">KNOW MORE</button>
+        </div>
+        <div class="card">
+          <h2>Root Canal Treatment</h2>
+          <button class="btn">KNOW MORE</button>
+        </div>
+        <div class="card">
+          <h2>Teeth Whitening</h2>
+          <button class="btn">KNOW MORE</button>
+        </div>
+        <div class="card">
+          <h2>Braces</h2>
+          <button class="btn">KNOW MORE</button>
+        </div>
+        <div class="card">
+          <h2>Dental Crowns & Bridges</h2>
+          <button class="btn">KNOW MORE</button>
+        </div>
+        <div class="card">
+          <h2>Dentures</h2>
+          <button class="btn">KNOW MORE</button>
+        </div>
+        <div class="card">
+          <h2>Gum Treatment</h2>
+          <button class="btn">KNOW MORE</button>
+        </div>
+        <div class="card">
+          <h2>Dental Implants</h2>
+          <button class="btn">KNOW MORE</button>
+        </div>
       </div>
     </section>
+    
 
-    <!-- menu section ends -->
+    <!-- treatment section ends -->
 
     <!-- review section starts -->
 
     <section class="review" id="review">
       <h1 class="heading">reviews <span>what people says</span></h1>
 
-      <div class="swiper review-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide box">
-            <i class="fas fa-quote-left"></i>
-            <i class="fas fa-quote-right"></i>
-            <img src="image/pic-1.png" alt="pic-1" />
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-              deleniti repellat, excepturi architecto illo autem.
-            </p>
-            <h3>john deo</h3>
-            <span>satisfied client</span>
+      <!-- Wrap slider and arrows in a container -->
+      <div class="slider-container">
+        <div class="slider-class">
+          <div>
+            <img src="image/review1.png" alt="review1" />
           </div>
-
-          <div class="swiper-slide box">
-            <i class="fas fa-quote-left"></i>
-            <i class="fas fa-quote-right"></i>
-            <img src="image/pic-2.png" alt="pic-2" />
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-              deleniti repellat, excepturi architecto illo autem.
-            </p>
-            <h3>john deo</h3>
-            <span>satisfied client</span>
+          <div>
+            <img src="image/review2.png" alt="review2" />
           </div>
-
-          <div class="swiper-slide box">
-            <i class="fas fa-quote-left"></i>
-            <i class="fas fa-quote-right"></i>
-            <img src="image/pic-3.png" alt="pic-3" />
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-              deleniti repellat, excepturi architecto illo autem.
-            </p>
-            <h3>john deo</h3>
-            <span>satisfied client</span>
+          <div>
+            <img src="image/review3.png" alt="review3" />
           </div>
-
-          <div class="swiper-slide box">
-            <i class="fas fa-quote-left"></i>
-            <i class="fas fa-quote-right"></i>
-            <img src="image/pic-4.png" alt="pic-4" />
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-              deleniti repellat, excepturi architecto illo autem.
-            </p>
-            <h3>john deo</h3>
-            <span>satisfied client</span>
+          <div>
+            <img src="image/review4.png" alt="review4" />
           </div>
         </div>
 
-        <div class="swiper-pagination"></div>
+        <!-- Custom Arrow Buttons -->
+        <div class="slick-custom-arrows">
+          <button class="slick-prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="slick-next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
       </div>
     </section>
 
     <!-- review section ends -->
-
-    <!-- book section starts -->
-
-    <section class="book" id="book">
-      <h1 class="heading">booking <span>reserve an appointment</span></h1>
-
-      <form action="">
-        <label class="label required" for="name">Name</label>
-        <input type="text" id="name" placeholder="Name" required class="box" />
-        <label class="label required" for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Email"
-          required
-          class="box"
-        />
-        <label class="label required" for="phone">Phone number</label>
-        <input
-          id="phone"
-          type="tel"
-          placeholder="Mobile"
-          pattern="[0-9]{10}"
-          required
-          class="box"
-        />
-
-        <!-- Date Field -->
-        <label class="label required" for="appointment-date"
-          >Select Appointment Date:</label
-        >
-        <input
-          type="date"
-          id="appointment-date"
-          name="appointment_date"
-          class="box"
-          required
-        />
-
-        <!-- Dropdown Field -->
-        <label class="label required" for="referral-source"
-          >How did you hear about us?</label
-        >
-        <select
-          class="box"
-          id="referral-source"
-          name="referral_source"
-          required
-        >
-          <option value="google">Google</option>
-          <option value="social_media">
-            Social Media (Facebook, Instagram, etc.)
-          </option>
-          <option value="word_of_mouth">Word of Mouth</option>
-          <option value="other">Other</option>
-        </select>
-
-        <label class="label required" for="message">Message</label>
-        <textarea
-          name=""
-          id="message"
-          placeholder="Message"
-          class="box"
-          cols="30"
-          rows="10"
-          required
-        ></textarea>
-
-        <input type="submit" value="book my appointment now" class="btn" />
-      </form>
-    </section>
-
-    <!-- book section ends -->
 
     <!-- footer section starts -->
 
@@ -400,9 +242,9 @@
             <img src="image/logo.png" alt="logo" width="200px" />
           </a>
           <p>
-            Ahirodent Dental Clinic in Vasai has 11 years of experience
-            in smile makeovers & advanced dental care for a healthy, confident
-            smile. Visit today!
+            Ahirodent Dental Clinic in Vasai has 11 years of experience in smile
+            makeovers & advanced dental care for a healthy, confident smile.
+            Visit today!
           </p>
         </div>
 
@@ -412,7 +254,7 @@
           <a href="#about"><i class="fas fa-arrow-right"></i>about us</a>
           <a href="#menu"><i class="fas fa-arrow-right"></i>our services</a>
           <a href="#review"><i class="fas fa-arrow-right"></i>review</a>
-          <a href="#book"><i class="fas fa-arrow-right"></i>book</a>
+          <a href="booking.html"><i class="fas fa-arrow-right"></i>book</a>
           <a href="faq.html"><i class="fas fa-arrow-right"></i>FAQ</a>
         </div>
 
@@ -423,28 +265,36 @@
           <a href="#" style="text-transform: none">
             <i class="fas fa-envelope"></i> ahirodent@gmail.com
           </a>
-          <a href="https://www.google.com/maps/dir//122,+Dattatray+Shopping+Centre,+Vasai+Station+Rd,+Dindayal+Nagar,+Vasai+West,+Vasai-Virar,+Maharashtra+401202/@19.3805884,72.7462013,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7af6fd2e2406d:0x3c35ce942c93f645!2m2!1d72.828603!2d19.3806069?entry=ttu&g_ep=EgoyMDI1MDMxMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D">
+          <a
+            href="https://www.google.com/maps/dir//122,+Dattatray+Shopping+Centre,+Vasai+Station+Rd,+Dindayal+Nagar,+Vasai+West,+Vasai-Virar,+Maharashtra+401202/@19.3805884,72.7462013,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7af6fd2e2406d:0x3c35ce942c93f645!2m2!1d72.828603!2d19.3806069?entry=ttu&g_ep=EgoyMDI1MDMxMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
+          >
             <i class="fa-solid fa-location-dot"></i> Vasai, Mumbai, 401202
           </a>
         </div>
 
         <div class="box">
           <h3>social media</h3>
-          <a href="https://m.facebook.com/ahirodent/"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="https://m.facebook.com/ahirodent/">
+            <i class="fab fa-facebook-f"></i> facebook
+          </a>
           <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-          <a href="https://www.instagram.com/drsandesh_ahir/"> <i class="fab fa-instagram"></i> instagram </a>
+          <a href="https://www.instagram.com/drsandesh_ahir/">
+            <i class="fab fa-instagram"></i> instagram
+          </a>
           <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
         </div>
       </div>
 
       <div class="credit">
-        Website managed & developed by <span><small>h</small>epaV</span> | all rights reserved
+        Website managed & developed by <span><small>h</small>epaV</span> | all
+        rights reserved
       </div>
     </section>
 
     <!-- footer section ends -->
 
-    <script src="https://unpkg.com/swiper@7.0.0/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
 
     <!-- custom js file link -->
     <script src="script.js"></script>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treatment Details</title>
+  <link rel="stylesheet" href="t-style.css"> <!-- Linking CSS -->
+</head>
+<body>
+
+  <header>
+    <h1 id="treatment-title">Treatment Name</h1>
+  </header>
+
+  <section class="treatment-details">
+    <div class="content">
+      <h2 id="treatment-heading">Loading...</h2>
+      <p id="treatment-description">Please wait...</p>
+    </div>
+  </section>
+
+  <a href="index.html" class="back-btn">Back to Treatments</a> <!-- Back Button -->
+
+  <script>
+    const treatments = {
+      "Teeth Cleaning": {
+        heading: "Professional Teeth Cleaning",
+        description: "Teeth cleaning removes plaque and tartar buildup, preventing cavities and gum disease. It also helps maintain fresh breath and improves oral hygiene."
+      },
+      "Dental Fillings": {
+        heading: "Dental Fillings for Cavities",
+        description: "Fillings restore decayed or damaged teeth by replacing the affected area with a durable material like composite resin or amalgam."
+      },
+      "Tooth Extraction": {
+        heading: "Safe & Painless Tooth Extraction",
+        description: "Tooth extraction is performed when a tooth is severely decayed, damaged, or impacted. The procedure is safe and usually done under local anesthesia."
+      },
+      "Root Canal Treatment": {
+        heading: "Pain-Free Root Canal Therapy",
+        description: "A root canal treatment is performed to save an infected tooth by removing the damaged pulp, cleaning the canal, and sealing it to prevent further infection."
+      },
+      "Teeth Whitening": {
+        heading: "Advanced Teeth Whitening",
+        description: "Professional teeth whitening treatments help remove stains and discoloration, giving you a brighter and more confident smile."
+      },
+      "Braces": {
+        heading: "Braces & Orthodontic Treatment",
+        description: "Braces help align and straighten teeth, correcting bite issues and improving overall dental aesthetics."
+      },
+      "Dental Crowns & Bridges": {
+        heading: "Crowns & Bridges for Damaged Teeth",
+        description: "Crowns and bridges restore broken or missing teeth, improving both function and appearance. They are custom-made to fit your mouth perfectly."
+      },
+      "Dentures": {
+        heading: "Comfortable & Natural-Looking Dentures",
+        description: "Dentures are removable appliances that replace missing teeth, allowing patients to eat and speak comfortably while restoring their smile."
+      },
+      "Gum Treatment": {
+        heading: "Gum Disease & Periodontal Care",
+        description: "Gum treatment focuses on treating gum infections, reducing inflammation, and preventing further gum disease progression."
+      },
+      "Dental Implants": {
+        heading: "Permanent Dental Implants",
+        description: "Dental implants are titanium posts surgically placed in the jawbone to replace missing teeth, providing a permanent and natural-looking solution."
+      }
+    };
+
+    function loadTreatmentDetails() {
+      const params = new URLSearchParams(window.location.search);
+      const treatment = params.get("treatment");
+
+      if (treatment && treatments[treatment]) {
+        document.getElementById("treatment-title").innerText = treatment;
+        document.getElementById("treatment-heading").innerText = treatments[treatment].heading;
+        document.getElementById("treatment-description").innerText = treatments[treatment].description;
+      } else {
+        document.getElementById("treatment-title").innerText = "Treatment Not Found";
+        document.getElementById("treatment-heading").innerText = "Oops!";
+        document.getElementById("treatment-description").innerText = "No details available for this treatment.";
+      }
+    }
+
+    window.onload = loadTreatmentDetails;
+  </script>
+
+</body>
+</html>

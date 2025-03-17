@@ -1,0 +1,95 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  /* Heading */
+  .heading {
+    font-size: 30px;
+    margin: 20px;
+    color: #3d9d93;
+  }
+  
+  /* Treatments section */
+  .treatments {
+    padding: 20px;
+  }
+  
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .btn {
+    background: #3d9d93;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #3d9d93;
+  }
+  
+  /* Treatment details page */
+  header {
+    background: #3d9d93;
+    color: white;
+    padding: 20px;
+  }
+  
+  .treatment-details {
+    padding: 20px;
+    background: white;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .treatment-details h2 {
+    color: #333;
+  }
+  
+  .treatment-details p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Back button */
+  .back-btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background: #3d9d93;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .back-btn:hover {
+    background:  #3d9d93;
+  }
+  

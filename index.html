@@ -151,48 +151,54 @@
       <h1 class="heading">treatments <span>procedures</span></h1>
 
       <div class="box-container">
-        <div class="card">
-          <h2>Teeth Cleaning</h2>
-          <button class="btn">KNOW MORE</button>
-        </div>
-        <div class="card">
-          <h2>Dental Fillings</h2>
-          <button class="btn">KNOW MORE</button>
-        </div>
-        <div class="card">
-          <h2>Tooth Extraction</h2>
-          <button class="btn">KNOW MORE</button>
-        </div>
-        <div class="card">
-          <h2>Root Canal Treatment</h2>
-          <button class="btn">KNOW MORE</button>
-        </div>
+      <div class="card">
+        <h2>Teeth Cleaning</h2>
+        <button class="btn" onclick="openTreatment('Teeth Cleaning')">KNOW MORE</button>
+      </div>
+      <div class="card">
+        <h2>Dental Fillings</h2>
+        <button class="btn" onclick="openTreatment('Dental Fillings')">KNOW MORE</button>
+      </div>
+      <div class="card">
+        <h2>Tooth Extraction</h2>
+        <button class="btn" onclick="openTreatment('Tooth Extraction')">KNOW MORE</button>
+      </div>
+      <div class="card">
+        <h2>Root Canal Treatment</h2>
+        <button class="btn" onclick="openTreatment('Root Canal Treatment')">KNOW MORE</button>
+      </div>
         <div class="card">
           <h2>Teeth Whitening</h2>
-          <button class="btn">KNOW MORE</button>
+          <button class="btn" onclick="openTreatment('Teeth-whitening Treatment')">KNOW MORE</button>
         </div>
         <div class="card">
           <h2>Braces</h2>
-          <button class="btn">KNOW MORE</button>
+          <button class="btn"  onclick="openTreatment('Braces Treatment')">KNOW MORE</button>
         </div>
         <div class="card">
           <h2>Dental Crowns & Bridges</h2>
-          <button class="btn">KNOW MORE</button>
+          <button class="btn"  onclick="openTreatment('Dental Crowns & Bridges Treatment')">KNOW MORE</button>
         </div>
         <div class="card">
           <h2>Dentures</h2>
-          <button class="btn">KNOW MORE</button>
+          <button class="btn"  onclick="openTreatment('Dentures Treatment')">KNOW MORE</button>
         </div>
         <div class="card">
           <h2>Gum Treatment</h2>
-          <button class="btn">KNOW MORE</button>
+          <button class="btn"  onclick="openTreatment('Gum Treatment')">KNOW MORE</button>
         </div>
         <div class="card">
           <h2>Dental Implants</h2>
-          <button class="btn">KNOW MORE</button>
+          <button class="btn"  onclick="openTreatment('Dental Implants Treatment')">KNOW MORE</button>
         </div>
       </div>
     </section>
+    
+<script>
+  function openTreatment(treatmentName) {
+    window.location.href = `treatment-details.html?treatment=${encodeURIComponent(treatmentName)}`;
+  }
+</script>
 
     <!-- treatment section ends -->
 
@@ -331,19 +337,20 @@
     <!-- footer section ends -->
 
     <a
-      href="https://wa.me/your-number-here"
-      class="whatsapp-btn"
-      target="_blank"
-      aria-label="Contact us on WhatsApp"
-    >
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-        alt="WhatsApp Logo"
-      />
-    </a>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    href="https://wa.me/+918390233767"
+    class="whatsapp-btn"
+    target="_blank"
+    aria-label="Contact us on WhatsApp"
+  >
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+      alt="WhatsApp Logo"
+    />
+  </a>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+  
 
     <!-- custom js file link -->
     <script src="script.js"></script>

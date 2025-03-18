@@ -32,36 +32,50 @@ $(document).ready(function() {
   $('button.slick-next').not('.slick-slider button.slick-next').remove();
 });
 
+//counter animation
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".counter");
+  const counterContainer = document.querySelector(".counter-container"); // Updated to match your HTML structure
+
+  if (!counterContainer) {
+    console.error("No element with class 'counter-container' found in the DOM.");
+    return;
+  }
 
   const animateCounters = () => {
-    counters.forEach(counter => {
-      const counterPosition = counter.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight / 1.3;
+    counters.forEach((counter) => {
+      const target = +counter.getAttribute("data-target");
+      const increment = target / 100; // Adjust for smoother animation
 
-      if (counterPosition < screenPosition && !counter.classList.contains("animated")) {
-        counter.classList.add("animated");
+      let current = 0;
 
-        const target = +counter.getAttribute("data-target");
-        const increment = target / 200;
+      const updateCounter = () => {
+        if (current < target) {
+          current = Math.ceil(current + increment);
+          counter.textContent = current;
+          requestAnimationFrame(updateCounter);
+        } else {
+          counter.textContent = target; // Ensure it ends at the target value
+        }
+      };
 
-        const updateCount = () => {
-          const count = +counter.innerText;
-
-          if (count < target) {
-            counter.innerText = Math.ceil(count + increment);
-            setTimeout(updateCount, 10);
-          } else {
-            counter.innerText = target; // Final number
-          }
-        };
-
-        updateCount();
-      }
+      updateCounter();
     });
   };
 
-  // Trigger the animation on scroll
-  window.addEventListener("scroll", animateCounters);
+  // IntersectionObserver to trigger animation when the container comes into view
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          observer.disconnect(); // Stop observing once animation starts
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  // Observe the counter-container
+  observer.observe(counterContainer);
 });

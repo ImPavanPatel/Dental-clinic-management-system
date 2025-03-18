@@ -2,12 +2,12 @@ const treatments = {
   "Teeth Cleaning": {
       heading: "Teeth Cleaning – A Fresh, Healthy Smile",
       description: `
-          <p>Teeth cleaning is a preventive dental procedure designed to remove plaque, tartar, and stains from the teeth. It is performed by a dental hygienist or dentist using specialized tools. Regular teeth cleaning helps prevent cavities, gum disease, and bad breath. The process includes scaling and polishing, and sometimes fluoride treatment for added protection.
-
-Types of Teeth Cleaning:
-
-Regular Cleaning (Prophylaxis): Recommended for patients with healthy gums to prevent plaque and tartar buildup.
-Deep Cleaning (Scaling and Root Planing): Required for patients with gum disease. It involves cleaning below the gum line to remove bacteria and plaque.</p><p>
+          <p>Teeth cleaning is a preventive dental procedure designed to remove plaque, tartar, and stains from the teeth. It is performed by a dental hygienist or dentist using specialized tools. Regular teeth cleaning helps prevent cavities, gum disease, and bad breath. The process includes scaling and polishing, and sometimes fluoride treatment for added protection.<br>
+<b>
+Types of Teeth Cleaning:</b><br>
+<ul>
+<li>Regular Cleaning (Prophylaxis): Recommended for patients with healthy gums to prevent plaque and tartar buildup.</li>
+<li>Deep Cleaning (Scaling and Root Planing): Required for patients with gum disease. It involves cleaning below the gum line to remove bacteria and plaque.</li></p><p>
 <br>
 <b>✅ Benefits:</b>
 <br>

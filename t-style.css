@@ -1,95 +1,110 @@
-/* General styles */
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f9f9f9;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+.main-header {
+  background: #3b82f6;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.main-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.main-header p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Welcome Section */
+.welcome-section {
+  padding: 40px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.welcome-section h2 {
+  font-size: 28px;
+  color: #3b82f6;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Treatment Details */
+.treatment-details {
+  padding: 50px 20px;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+.treatment-details h2 {
+  font-size: 30px;
+  color: #3b82f6;
+  margin-bottom: 20px;
+}
+
+.treatment-details p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Back Button */
+.back-btn-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.back-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #3b82f6;
+  padding: 12px 30px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #2563eb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-header h1 {
+    font-size: 28px;
   }
-  
-  /* Heading */
-  .heading {
-    font-size: 30px;
-    margin: 20px;
-    color: #3d9d93;
+
+  .welcome-section h2 {
+    font-size: 22px;
   }
-  
-  /* Treatments section */
-  .treatments {
-    padding: 20px;
-  }
-  
-  .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .card {
-    background: white;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
-  }
-  
-  .card h2 {
-    font-size: 20px;
-    color: #333;
-  }
-  
-  .btn {
-    background: #3d9d93;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background: #3d9d93;
-  }
-  
-  /* Treatment details page */
-  header {
-    background: #3d9d93;
-    color: white;
-    padding: 20px;
-  }
-  
-  .treatment-details {
-    padding: 20px;
-    background: white;
-    margin: 20px auto;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
+
   .treatment-details h2 {
-    color: #333;
+    font-size: 24px;
   }
-  
-  .treatment-details p {
-    color: #555;
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  /* Back button */
-  .back-btn {
-    display: inline-block;
-    margin: 20px;
-    padding: 10px 20px;
-    background: #3d9d93;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .back-btn:hover {
-    background:  #3d9d93;
-  }
-  
+}

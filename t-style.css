@@ -16,7 +16,7 @@ body {
 
 /* Header Section */
 .main-header {
-  background: #3b82f6;
+  background: #8fd4cf;
   color: #fff;
   padding: 40px 20px;
   text-align: center;
@@ -41,7 +41,7 @@ body {
 
 .welcome-section h2 {
   font-size: 28px;
-  color: #3b82f6;
+  color: #8fd4cf;
   margin-bottom: 20px;
 }
 
@@ -62,7 +62,7 @@ body {
 
 .treatment-details h2 {
   font-size: 30px;
-  color: #3b82f6;
+  color: #8fd4cf;
   margin-bottom: 20px;
 }
 
@@ -84,7 +84,7 @@ body {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  background: #3b82f6;
+  background: #8fd4cf;
   padding: 12px 30px;
   border-radius: 5px;
   transition: 0.3s;

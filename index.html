@@ -63,7 +63,6 @@
         <a href="#about">about us</a>
         <a href="#menu">our treatments</a>
         <a href="#review">review</a>
-        <a href="booking.html">book</a>
       </nav>
 
       <a href="booking.html" class="btn">book an appointment</a>
@@ -115,7 +114,7 @@
             affordable, high-quality care with transparent pricing and payment
             options. Trust us to bring out the best in your smile.
           </p>
-          <a href="#" class="btn">book your appointment today</a>
+          <a href="booking.html" class="btn">book your appointment today</a>
 
           <div class="icons-container">
             <div class="icons">
@@ -151,54 +150,80 @@
       <h1 class="heading">treatments <span>procedures</span></h1>
 
       <div class="box-container">
-      <div class="card">
-        <h2>Teeth Cleaning</h2>
-        <button class="btn" onclick="openTreatment('Teeth Cleaning')">KNOW MORE</button>
-      </div>
-      <div class="card">
-        <h2>Dental Fillings</h2>
-        <button class="btn" onclick="openTreatment('Dental Fillings')">KNOW MORE</button>
-      </div>
-      <div class="card">
-        <h2>Tooth Extraction</h2>
-        <button class="btn" onclick="openTreatment('Tooth Extraction')">KNOW MORE</button>
-      </div>
-      <div class="card">
-        <h2>Root Canal Treatment</h2>
-        <button class="btn" onclick="openTreatment('Root Canal Treatment')">KNOW MORE</button>
-      </div>
         <div class="card">
-          <h2>Teeth Whitening</h2>
-          <button class="btn" onclick="openTreatment('Teeth Whitening')">KNOW MORE</button>
-        </div>
-        <div class="card">
-          <h2>Braces</h2>
-          <button class="btn"  onclick="openTreatment('Braces')">KNOW MORE</button>
-        </div>
-        <div class="card">
-          <h2>Dental Crowns & Bridges</h2>
-          <button class="btn"  onclick="openTreatment('Dental Crowns & Bridges')">KNOW MORE</button>
-        </div>
-        <div class="card">
-          <h2>Dentures</h2>
-          <button class="btn"  onclick="openTreatment('Dentures')">KNOW MORE</button>
-        </div>
-        <div class="card">
-          <h2>Gum Treatment</h2>
-          <button class="btn"  onclick="openTreatment('Gum Treatment')">KNOW MORE</button>
+          <h2>Root Canal Treatment</h2>
+          <button class="btn" onclick="openTreatment('root-canal-treatment')">
+            KNOW MORE
+          </button>
         </div>
         <div class="card">
           <h2>Dental Implants</h2>
-          <button class="btn"  onclick="openTreatment('Dental Implants')">KNOW MORE</button>
+          <button class="btn" onclick="openTreatment('dental-implants')">
+            KNOW MORE
+          </button>
+        </div>
+        <div class="card">
+          <h2>Invisible Braces</h2>
+          <button class="btn" onclick="openTreatment('invisible-braces')">
+            KNOW MORE
+          </button>
+        </div>
+        <div class="card">
+          <h2>Cosmetic Fillings</h2>
+          <button class="btn" onclick="openTreatment('cosmetic-fillings')">
+            KNOW MORE
+          </button>
+        </div>
+        <div class="card">
+          <h2>Dental Veneers</h2>
+          <button class="btn" onclick="openTreatment('dental-veneers')">
+            KNOW MORE
+          </button>
+        </div>
+        <div class="card">
+          <h2>Crowns and Bridges</h2>
+          <button class="btn" onclick="openTreatment('crowns-bridges')">
+            KNOW MORE
+          </button>
+        </div>
+        <div class="card">
+          <h2>Full Mouth Rehabilitation</h2>
+          <button
+            class="btn"
+            onclick="openTreatment('full-mouth-rehabilitation')"
+          >
+            KNOW MORE
+          </button>
+        </div>
+        <div class="card">
+          <h2>Teeth Whitening</h2>
+          <button class="btn" onclick="openTreatment('teeth-whitening')">
+            KNOW MORE
+          </button>
+        </div>
+      
+        <div class="card">
+          <h2>Dentures</h2>
+          <button class="btn" onclick="openTreatment('dentures')">
+            KNOW MORE
+          </button>
+        </div>
+        <div class="card">
+          <h2>Wisdom Tooth Surgery</h2>
+          <button class="btn" onclick="openTreatment('wisdom-tooth-surgery')">
+            KNOW MORE
+          </button>
         </div>
       </div>
     </section>
-    
-<script>
-  function openTreatment(treatmentName) {
-    window.location.href = `treatment-details.html?treatment=${encodeURIComponent(treatmentName)}`;
-  }
-</script>
+
+    <script>
+      function openTreatment(treatmentName) {
+        window.location.href = `treatment-details.html?treatment=${encodeURIComponent(
+          treatmentName
+        )}`;
+      }
+    </script>
 
     <!-- treatment section ends -->
 
@@ -209,28 +234,28 @@
       <div class="counter-container">
         <div class="counter-item">
           <span class="counter-wrapper">
-            <span class="counter" data-target="3000">0</span
+            <span class="counter" data-target="10000">0</span
             ><span class="plus">+</span>
           </span>
           <p>Happy Clients</p>
         </div>
         <div class="counter-item">
           <span class="counter-wrapper">
-            <span class="counter" data-target="600">0</span
+            <span class="counter" data-target="6000">0</span
             ><span class="plus">+</span>
           </span>
           <p>Smile Makeover</p>
         </div>
         <div class="counter-item">
           <span class="counter-wrapper">
-            <span class="counter" data-target="1000">0</span
+            <span class="counter" data-target="7500">0</span
             ><span class="plus">+</span>
           </span>
           <p>Dental Implants</p>
         </div>
         <div class="counter-item">
           <span class="counter-wrapper">
-            <span class="counter" data-target="500">0</span
+            <span class="counter" data-target="5000">0</span
             ><span class="plus">+</span>
           </span>
           <p>Whitening</p>
@@ -295,7 +320,7 @@
           <h3>quick links</h3>
           <a href="#home"><i class="fas fa-arrow-right"></i>home</a>
           <a href="#about"><i class="fas fa-arrow-right"></i>about us</a>
-          <a href="#menu"><i class="fas fa-arrow-right"></i>our services</a>
+          <a href="#menu"><i class="fas fa-arrow-right"></i>our treatments</a>
           <a href="#review"><i class="fas fa-arrow-right"></i>review</a>
           <a href="booking.html"><i class="fas fa-arrow-right"></i>book</a>
           <a href="faq.html"><i class="fas fa-arrow-right"></i>FAQ</a>
@@ -329,28 +354,26 @@
       </div>
 
       <div class="credit">
-        Website managed & developed by <span><small>h</small>epaV</span> | all
-        rights reserved
+        Website managed & developed by <span>us</span> | all rights reserved
       </div>
     </section>
 
     <!-- footer section ends -->
 
     <a
-    href="https://wa.me/+919699664106"
-    class="whatsapp-btn"
-    target="_blank"
-    aria-label="Contact us on WhatsApp"
-  >
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-      alt="WhatsApp Logo"
-    />
-  </a>
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
-  
+      href="https://wa.me/+919699664106"
+      class="whatsapp-btn"
+      target="_blank"
+      aria-label="Contact us on WhatsApp"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp Logo"
+      />
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
 
     <!-- custom js file link -->
     <script src="script.js"></script>

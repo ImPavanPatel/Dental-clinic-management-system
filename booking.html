@@ -40,7 +40,7 @@
       <nav class="navbar">
         <a href="index.html#home">home</a>
         <a href="index.html#about">about</a>
-        <a href="#menu">menu</a>
+        <a href="#menu">our treatments</a>
         <a href="index.html#review">review</a>
         <!-- <a href="#book">book</a> -->
       </nav>
@@ -53,70 +53,33 @@
     <section class="book" id="book" style="padding-top: 10rem">
       <h1 class="heading">booking <span>reserve an appointment</span></h1>
 
-      <form action="">
+      <form action="process_booking.php" method="POST">
         <label class="label required" for="name">Name</label>
-        <input type="text" id="name" placeholder="Name" required class="box" />
+        <input type="text" id="name" name="name" placeholder="Name" required class="box" />
+    
         <label class="label required" for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Email"
-          required
-          class="box"
-        />
+        <input type="email" id="email" name="email" placeholder="Email" required class="box" />
+    
         <label class="label required" for="phone">Phone number</label>
-        <input
-          id="phone"
-          type="tel"
-          placeholder="9876543210"
-          pattern="[0-9]{10}"
-          required
-          class="box"
-        />
-
-        <!-- Date Field -->
-        <label class="label required" for="appointment-date"
-          >Select Appointment Date:</label
-        >
-        <input
-          type="date"
-          id="appointment-date"
-          name="appointment-date"
-          class="box"
-          required
-        />
-
-        <!-- Dropdown Field -->
-        <label class="label required" for="referral-source"
-          >How did you hear about us?</label
-        >
-        <select
-          class="box"
-          id="referral-source"
-          name="referral_source"
-          required
-        >
-          <option value="google">Google</option>
-          <option value="social_media">
-            Social Media (Facebook, Instagram, etc.)
-          </option>
-          <option value="word_of_mouth">Word of Mouth</option>
-          <option value="other">Other</option>
+        <input id="phone" name="phone" type="tel" placeholder="9876543210" pattern="[0-9]{10}" required class="box" />
+    
+        <label class="label required" for="appointment-date">Select Appointment Date:</label>
+        <input type="date" id="appointment-date" name="appointment_date" class="box" required />
+    
+        <label class="label required" for="referral-source">How did you hear about us?</label>
+        <select class="box" id="referral-source" name="referral_source" required>
+            <option value="google">Google</option>
+            <option value="social_media">Social Media (Facebook, Instagram, etc.)</option>
+            <option value="word_of_mouth">Word of Mouth</option>
+            <option value="other">Other</option>
         </select>
-
+    
         <label class="label required" for="message">Message</label>
-        <textarea
-          name=""
-          id="message"
-          placeholder="Message"
-          class="box"
-          cols="30"
-          rows="10"
-          required
-        ></textarea>
-
+        <textarea name="message" id="message" placeholder="Message" class="box" cols="30" rows="10" required></textarea>
+    
         <input type="submit" value="book my appointment now" class="btn" />
-      </form>
+    </form>
+    
     </section>
 
     <!-- book section ends -->
@@ -201,7 +164,7 @@
       </div>
 
       <div class="credit">
-        Created by <span>ImPavanPatel</span> | all rights reserved
+        Created by <span>Us</span> | all rights reserved
       </div>
     </section>
 

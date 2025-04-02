@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "dental_clinic";
+$database = "ahirodent";
 
 // Connect to the database
 $conn = new mysqli($servername, $username, $password, $database);
@@ -28,10 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             VALUES ('$name', '$email', '$phone', '$appointment_date', '$referral_source', '$message')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "<script>
-            alert('Appointment booked successfully!');
-            window.location.href = 'booking.html';
-        </script>";
+        // Redirect to the booking page with a success message
+        header("Location: booking.php?success=true");
+        exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
@@ -39,4 +38,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // Close the connection
 $conn->close();
-?>

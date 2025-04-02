@@ -1,3 +1,7 @@
+<?php
+// You can add PHP logic here if needed (e.g., database connections, form handling).
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -63,32 +67,158 @@
         <a href="#about">about us</a>
         <a href="#menu">our treatments</a>
         <a href="#review">review</a>
+        <a href="faq.php">FAQ</a>
       </nav>
 
-      <a href="booking.html" class="btn">book an appointment</a>
+      <a href="booking.php" class="btn">book an appointment</a>
     </header>
 
     <!-- header section ends -->
 
     <!-- home section starts -->
 
-    <section class="home" id="home">
-      <div class="row">
-        <div class="content">
-          <h3>Your best life begins with a smile</h3>
-          <p>Get the best treatment for your teeth</p>
-        </div>
+<!-- Include AOS Library -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-        <div class="image">
-          <img
-            draggable="false"
-            src="image/teeth.png"
-            class="main-home-image"
-            alt="home-img-1"
-          />
-        </div>
-      </div>
-    </section>
+<style>
+  /* General Styling */
+    .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 10%;
+    background: url("image/home_background.jpg") no-repeat center center/cover;
+    position: relative;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  /* Text Content Styling */
+  .content {
+    max-width: 500px;
+  }
+
+  .content h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  .content p {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    margin-top: 10px;
+    animation: slideUp 1.2s ease-in-out;
+  }
+
+  /* Image Styling */
+  .image {
+    position: relative;
+  }
+
+  .main-home-image {
+    width: 400px;
+    transition: transform 0.5s ease-in-out;
+    animation: bounceIn 1.5s ease-in-out;
+  }
+
+  /* Hover Effect */
+  .main-home-image:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      text-align: center;
+    }
+    .content h3 {
+      font-size: 2rem;
+    }
+    .main-home-image {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+</style>
+
+<section class="home" id="home">
+  <div class="row">
+    <div class="content" data-aos="fade-right">
+      <h3>Your best life begins with a smile</h3>
+      <p>Get the best treatment for your teeth</p>
+    </div>
+
+    <div class="image" data-aos="fade-left">
+      <img
+        draggable="false"
+        src="image/teeth.png"
+        class="main-home-image"
+        alt="home-img-1"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Initialize AOS -->
+<script>
+  AOS.init({
+    duration: 1200, // Animation duration
+    once: true, // Animations happen once
+  });
+</script>
+
 
     <!-- home section ends -->
 
@@ -114,7 +244,7 @@
             affordable, high-quality care with transparent pricing and payment
             options. Trust us to bring out the best in your smile.
           </p>
-          <a href="booking.html" class="btn">book your appointment today</a>
+          <a href="booking.php" class="btn">book your appointment today</a>
 
           <div class="icons-container">
             <div class="icons">
@@ -306,7 +436,7 @@
     <section class="footer">
       <div class="box-container">
         <div class="box">
-          <a href="index.html">
+          <a href="index.php">
             <img src="image/logo.png" alt="logo" width="200px" />
           </a>
           <p>
@@ -320,10 +450,10 @@
           <h3>quick links</h3>
           <a href="#home"><i class="fas fa-arrow-right"></i>home</a>
           <a href="#about"><i class="fas fa-arrow-right"></i>about us</a>
-          <a href="#menu"><i class="fas fa-arrow-right"></i>our treatments</a>
+          <a href="#treatments"><i class="fas fa-arrow-right"></i>our treatments</a>
           <a href="#review"><i class="fas fa-arrow-right"></i>review</a>
-          <a href="booking.html"><i class="fas fa-arrow-right"></i>book</a>
-          <a href="faq.html"><i class="fas fa-arrow-right"></i>FAQ</a>
+          <a href="booking.php"><i class="fas fa-arrow-right"></i>book</a>
+          <a href="faq.php"><i class="fas fa-arrow-right"></i>FAQ</a>
         </div>
 
         <div class="box">

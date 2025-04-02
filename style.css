@@ -17,7 +17,7 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: capitalize; 
   transition: all .2s linear;
 }
 
@@ -477,6 +477,7 @@ section{
   font-size: 1.5rem;
   padding: 1rem 0;
   text-transform: none;
+  color: #000;
 }
 
 .footer .box-container .box a i{
@@ -801,3 +802,51 @@ section{
     width: 60%;
   }
 }
+
+/* Query */
+.query-form {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.query-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.query-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.query-form input, .query-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.query-form button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  width: 100%;
+}
+
+.query-form button:hover {
+  background-color: #218838;
+}
+

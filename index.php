@@ -65,7 +65,7 @@
       <nav class="navbar">
         <a href="#home">home</a>
         <a href="#about">about us</a>
-        <a href="#menu">our treatments</a>
+        <a href="#treatments">our treatments</a>
         <a href="#review">review</a>
         <a href="faq.php">FAQ</a>
       </nav>
@@ -77,147 +77,37 @@
 
     <!-- home section starts -->
 
-<!-- Include AOS Library -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-<style>
-  /* General Styling */
-    .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 50px 10%;
-    background: url("image/home_background.jpg") no-repeat center center/cover;
-    position: relative;
-  }
+ <!-- home section starts -->
 
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1200px;
-  }
+ <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <h3>Your best life begins with a smile</h3>
+          <p>Get the best treatment for your teeth</p>
+        </div>
 
-  /* Text Content Styling */
-  .content {
-    max-width: 500px;
-  }
+        <div class="image">
+          <img
+            draggable="false"
+            src="image/teeth.png"
+            class="main-home-image"
+            alt="home-img-1"
+          />
+        </div>
+      </div>
+    </section>
 
-  .content h3 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #fff;
-    animation: fadeIn 1.5s ease-in-out;
-  }
+    <!-- home section ends -->
 
-  .content p {
-    font-size: 1.2rem;
-    color: #f1f1f1;
-    margin-top: 10px;
-    animation: slideUp 1.2s ease-in-out;
-  }
-
-  /* Image Styling */
-  .image {
-    position: relative;
-  }
-
-  .main-home-image {
-    width: 400px;
-    transition: transform 0.5s ease-in-out;
-    animation: bounceIn 1.5s ease-in-out;
-  }
-
-  /* Hover Effect */
-  .main-home-image:hover {
-    transform: scale(1.1) rotate(5deg);
-  }
-
-  /* Keyframe Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes slideUp {
-    from {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes bounceIn {
-    0% {
-      transform: scale(0.5);
-      opacity: 0;
-    }
-    60% {
-      transform: scale(1.1);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .row {
-      flex-direction: column;
-      text-align: center;
-    }
-    .content h3 {
-      font-size: 2rem;
-    }
-    .main-home-image {
-      width: 100%;
-      max-width: 300px;
-    }
-  }
-</style>
-
-<section class="home" id="home">
-  <div class="row">
-    <div class="content" data-aos="fade-right">
-      <h3>Your best life begins with a smile</h3>
-      <p>Get the best treatment for your teeth</p>
-    </div>
-
-    <div class="image" data-aos="fade-left">
-      <img
-        draggable="false"
-        src="image/teeth.png"
-        class="main-home-image"
-        alt="home-img-1"
-      />
-    </div>
-  </div>
-</section>
-
-<!-- Initialize AOS -->
+<!-- Initialize AOS
 <script>
   AOS.init({
     duration: 1200, // Animation duration
     once: true, // Animations happen once
   });
-</script>
+</script> -->
 
 
     <!-- home section ends -->

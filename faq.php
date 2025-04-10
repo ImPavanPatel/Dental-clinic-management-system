@@ -38,21 +38,19 @@
 <body>
   <header class="header">
     <div id="menu-btn" class="fas fa-bars"></div>
-    <a href="index.html" class="logo">
+    <a href="index.php" class="logo">
       <img
         src="image/logo.png"
         width="100px"
         alt="Ahirodent Dental Clinic Logo" />
     </a>
     <nav class="navbar">
-      <a href="index.php#home">home</a>
+      <a href="index.php">home</a>
       <a href="index.php#about">about us</a>
       <a href="index.php#treatments">our treatments</a>
       <a href="index.php#review">review</a>
-      <a href="index.php#book">book</a>
-      <a href="faq.php">FAQ</a>
     </nav>
-    <a href="booking.html" class="btn">book an appointment</a>
+    <a href="booking.php" class="btn">book an appointment</a>
   </header>
 
   <section class="faq-section" style="padding-top: 10rem">
@@ -171,11 +169,76 @@
   </section>
   </section>
 
-  <section class="footer"></section>
+  <!-- footer section starts -->
 
-  <footer class="footer">
-    &copy; 2025 Ahirodent Dental Clinic | All Rights Reserved
-  </footer>
+  <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <a href="index.php">
+            <img src="image/logo.png" alt="logo" width="200px" />
+          </a>
+          <p>
+            Ahirodent Dental Clinic in Vasai has 11 years of experience in smile
+            makeovers & advanced dental care for a healthy, confident smile.
+            Visit today!
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="index.php"><i class="fas fa-arrow-right"></i>home</a>
+          <a href="index.php#about"><i class="fas fa-arrow-right"></i>about us</a>
+          <a href="index.php#treatments"><i class="fas fa-arrow-right"></i>our treatments</a>
+          <a href="index.php#review"><i class="fas fa-arrow-right"></i>review</a>
+          <a href="booking.php"><i class="fas fa-arrow-right"></i>book</a>
+          <a href="faq.php"><i class="fas fa-arrow-right"></i>FAQ</a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +91 8390233767 </a>
+          <a href="#"> <i class="fas fa-phone"></i> +91 9699664106 </a>
+          <a href="#" style="text-transform: none">
+            <i class="fas fa-envelope"></i> ahirodent@gmail.com
+          </a>
+          <a
+            href="https://www.google.com/maps/dir//122,+Dattatray+Shopping+Centre,+Vasai+Station+Rd,+Dindayal+Nagar,+Vasai+West,+Vasai-Virar,+Maharashtra+401202/@19.3805884,72.7462013,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7af6fd2e2406d:0x3c35ce942c93f645!2m2!1d72.828603!2d19.3806069?entry=ttu&g_ep=EgoyMDI1MDMxMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
+          >
+            <i class="fa-solid fa-location-dot"></i> Vasai, Mumbai, 401202
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>social media</h3>
+          <a href="https://m.facebook.com/ahirodent/">
+            <i class="fab fa-facebook-f"></i> facebook
+          </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+          <a href="https://www.instagram.com/drsandesh_ahir/">
+            <i class="fab fa-instagram"></i> instagram
+          </a>
+          <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+        </div>
+      </div>
+
+      <div class="credit">
+        Website managed & developed by <span>us</span> | all rights reserved
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <a
+      href="https://wa.me/+919699664106"
+      class="whatsapp-btn"
+      target="_blank"
+      aria-label="Contact us on WhatsApp"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp Logo"
+      />
+    </a>
 
 <script src="script.js"></script>
 <script src="faq.js"></script>
